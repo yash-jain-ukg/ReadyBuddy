@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Training Buddy",
+  "version": "2.0",
+  "description": "A Chrome extension with Dialogflow Messenger in a popup",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["df-messenger.js"],
+      "matches": ["<all_urls>"],
+      "use_dynamic_url": true
+    }
+  ]
+  
+}
